@@ -1,0 +1,24 @@
+# bytecode stuff
+__pycache__/
+*.py[cod]
+
+# vscode
+.vscode/
+
+# virtual environment
+venv/
+
+# bot token
+token.txt
+
+# log files
+*.log*
+
+# database
+*.db
+
+# Contains words that get you automatically warned
+badwords.txt
+
+# Contains the bot's starboard config
+starboard.json
