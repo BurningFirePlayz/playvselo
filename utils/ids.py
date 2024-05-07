@@ -45,8 +45,8 @@ class GuildNames:
 class GuildIDs:
     """The unique Server IDs."""
 
-    TRAINING_GROUNDS = 739299507795132486
-    BATTLEGROUNDS = 915395890775216188
+    TRAINING_GROUNDS = 1169404105857441882
+    BATTLEGROUNDS = 1169404105857441882
     # This is done for application commands, we need a list of guild objects.
     ALL_GUILDS = [discord.Object(id=TRAINING_GROUNDS), discord.Object(id=BATTLEGROUNDS)]
     # The list of guilds where the bot does admin stuff.
@@ -61,7 +61,7 @@ class AdminVars:
 
     APPEAL_MESSAGE = "If you would like to discuss your punishment, please contact @parz, @phxenix or @fahimer on discord."
     # Google doc with ban records, leave an empty string if you dont have one.
-    BAN_RECORDS = "https://docs.google.com/spreadsheets/d/1EZhyKa69LWerQl0KxeVJZuLFFjBIywMRTNOPUUKyVCc/"
+    BAN_RECORDS = "empty"
     # Google form for ban appeals, this will get sent to users before they get banned so they know where to appeal.
     APPEAL_FORM = "https://forms.gle/kLcpkenBDSWzCYq56"
 
@@ -70,7 +70,7 @@ class TournamentReminders:
     """Contains variables used in the Tournament Reminder Pings."""
 
     # Change this to False to disable pings.
-    PING_ENABLED = True
+    PING_ENABLED = False
     # The timezone the other times are based on. Also used as a default for %reminder.
     # The list of available timezones can be found here: https://en.wikipedia.org/wiki/List_of_tz_database_time_zones.
     TIMEZONE = "US/Eastern"
@@ -108,11 +108,11 @@ class TournamentReminders:
 class TGChannelIDs:
     """Contains Channel IDs used throughout the code, specific to the Training Grounds Server."""
 
-    GENERAL_CHANNEL = 739299507937738849
-    RULES_CHANNEL = 739299507937738843
-    HELP_CHANNEL = 1021104415383507075
-    GENERAL_VOICE_CHAT = 765625841861394442
-    ANNOUNCEMENTS_CHANNEL = 739299507937738844
+    GENERAL_CHANNEL = 1237335368500772896
+    RULES_CHANNEL = 1237335338909827072
+    HELP_CHANNEL = 11237335389795258491
+    GENERAL_VOICE_CHAT = 1237335418148618283
+    ANNOUNCEMENTS_CHANNEL = 1237335449681268786
     # Private channels for our Teams.
     STREAM_TEAM = 766721811962396672
     TOURNAMENT_TEAM = 812433498013958205
@@ -150,7 +150,7 @@ class TGArenaChannelIDs:
     """Contains just the IDs of the Matchmaking Channels on the Training Grounds Server."""
 
     # Normal arenas, like #arena-1, etc.
-    PUBLIC_ARENAS = (739299508403437626, 739299508403437627, 742190378051960932)
+    PUBLIC_ARENAS = (1237336332536119370)
     # Private arenas, like #champions-arena, etc.
     PRIVATE_ARENAS = (
         801176498274172950,
@@ -159,7 +159,7 @@ class TGArenaChannelIDs:
         831673163812569108,
     )
     # Openly accessible ranked arenas, like #ranked-matchmaking-1 etc.
-    OPEN_RANKED_ARENAS = (835582101926969344, 835582155446681620, 836018137119850557)
+    OPEN_RANKED_ARENAS = (1237336368233971754)
     # The ranked arenas that are closed off to certain skill ranges.
     CLOSED_RANKED_ARENAS = (
         1017912840134328411,
