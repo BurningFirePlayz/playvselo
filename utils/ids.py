@@ -1,5 +1,3 @@
-# Here is the place where the unique IDs are stored.
-# Change them as you wish, but keep the names and the types.
 from typing import Optional
 
 import discord
@@ -11,7 +9,6 @@ class GetIDFunctions:
     @staticmethod
     def get_muted_role(guild_id: int) -> Optional[int]:
         """Gets you the muted role of a given guild."""
-
         if guild_id == GuildIDs.TRAINING_GROUNDS:
             return TGRoleIDs.MUTED_ROLE
         elif guild_id == GuildIDs.BATTLEGROUNDS:
@@ -22,10 +19,8 @@ class GetIDFunctions:
     @staticmethod
     def get_logchannel(guild_id: int) -> Optional[int]:
         """Gets you the Log Channel ID of a given guild."""
-
         if guild_id == GuildIDs.TRAINING_GROUNDS:
             return TGChannelIDs.LOGCHANNEL
-
         elif guild_id == GuildIDs.BATTLEGROUNDS:
             return BGChannelIDs.LOGCHANNEL
         else:
@@ -48,7 +43,10 @@ class GuildIDs:
     TRAINING_GROUNDS = 1169404105857441882
     BATTLEGROUNDS = 1169404105857441882
     # This is done for application commands, we need a list of guild objects.
-    ALL_GUILDS = [discord.Object(id=TRAINING_GROUNDS), discord.Object(id=BATTLEGROUNDS)]
+    ALL_GUILDS = [
+        discord.Object(id=TRAINING_GROUNDS),
+        discord.Object(id=BATTLEGROUNDS),
+    ]
     # The list of guilds where the bot does admin stuff.
     ADMIN_GUILDS = [
         discord.Object(id=TRAINING_GROUNDS),
@@ -59,7 +57,9 @@ class GuildIDs:
 class AdminVars:
     """Admin specific strings, like the Server Owner and Head Moderators."""
 
-    APPEAL_MESSAGE = "If you would like to discuss your punishment, please contact @parz, @phxenix or @fahimer on discord."
+    APPEAL_MESSAGE = (
+        "If you would like to discuss your punishment, please contact @parz, @phxenix or @fahimer on discord."
+    )
     # Google doc with ban records, leave an empty string if you dont have one.
     BAN_RECORDS = "empty"
     # Google form for ban appeals, this will get sent to users before they get banned so they know where to appeal.
