@@ -150,7 +150,7 @@ class TGArenaChannelIDs:
     """Contains just the IDs of the Matchmaking Channels on the Training Grounds Server."""
 
     # Normal arenas, like #arena-1, etc.
-    PUBLIC_ARENAS = (1237336332536119370)
+    PUBLIC_ARENAS = (1237336332536119370,)
     # Private arenas, like #champions-arena, etc.
     PRIVATE_ARENAS = (
         801176498274172950,
@@ -159,7 +159,7 @@ class TGArenaChannelIDs:
         831673163812569108,
     )
     # Openly accessible ranked arenas, like #ranked-matchmaking-1 etc.
-    OPEN_RANKED_ARENAS = (1237336368233971754)
+    OPEN_RANKED_ARENAS = (1237336368233971754,)
     # The ranked arenas that are closed off to certain skill ranges.
     CLOSED_RANKED_ARENAS = (
         1017912840134328411,
@@ -167,6 +167,7 @@ class TGArenaChannelIDs:
         1017912968480051250,
         1017913062591828058,
     )
+
 
 
 class BGChannelIDs:
