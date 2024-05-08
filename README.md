@@ -4,7 +4,7 @@
 
 
 A discord bot specifically made for the VA PlayVS Server
-Made by Phxenix and forked by Paino If you have any questions feel free to contact me on Discord.
+Made by Phxenix and forked by rbbi If you have any questions feel free to contact me on Discord.
 
 ## Features include
 
