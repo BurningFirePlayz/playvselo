@@ -138,11 +138,11 @@ class TGChannelIDs:
 
     # The channels where the level system does not work.
     BLACKLISTED_CHANNELS = (
-        739299509401813081,
-        777964337880891412,
-        739299508197917058,
-        739299507937738844,
-        867791858464456724,
+        1169404105857441884,
+        1186436017566253197,
+        1216618872883511336,
+        1236432066581758013,
+        1221180327221923972,
     )
 
 
@@ -150,7 +150,7 @@ class TGArenaChannelIDs:
     """Contains just the IDs of the Matchmaking Channels on the Training Grounds Server."""
 
     # Normal arenas, like #arena-1, etc.
-    PUBLIC_ARENAS = (1237336332536119370)
+    PUBLIC_ARENAS = (1237336332536119370, 123733613850284, 12373347385843)
     # Private arenas, like #champions-arena, etc.
     PRIVATE_ARENAS = (
         801176498274172950,
@@ -159,7 +159,7 @@ class TGArenaChannelIDs:
         831673163812569108,
     )
     # Openly accessible ranked arenas, like #ranked-matchmaking-1 etc.
-    OPEN_RANKED_ARENAS = (1237336368233971754)
+    OPEN_RANKED_ARENAS = (1237336368233971754, 14732948392843, 123763336845788)
     # The ranked arenas that are closed off to certain skill ranges.
     CLOSED_RANKED_ARENAS = (
         1017912840134328411,
@@ -180,7 +180,7 @@ class BGChannelIDs:
 class TGRoleIDs:
     """Contains the Role IDs used throughout the code, specific to the Training Grounds Server."""
 
-    MOD_ROLE = 739299507816366106
+    MOD_ROLE = 1181729857911128095
     MUTED_ROLE = 739391329779581008
     # The role you get when you join the General VC.
     VOICE_ROLE = 824258210101198889
@@ -216,30 +216,30 @@ class TGLevelRoleIDs:
     """Contains only the Level Role IDs, which are used to hand out Level Roles."""
 
     # The default role you recieve when joining the server.
-    RECRUIT_ROLE = 739299507799326843
+    RECRUIT_ROLE = 1169404105857441882
     # Roles you get when you reach X level.
-    LEVEL_10_ROLE = 827473860936990730
-    LEVEL_25_ROLE = 827473868766707762
-    LEVEL_50_ROLE = 827473874413289484
-    LEVEL_75_ROLE = 827583894776840212
-    LEVEL_100_ROLE = 927706002831323166
+    LEVEL_10_ROLE = 1237479895672557648
+    LEVEL_25_ROLE = 1237479990501576826
+    LEVEL_50_ROLE = 1237480101478924368
+    LEVEL_75_ROLE = 1237480167182700645
+    LEVEL_100_ROLE = 1237480231032590468
 
 
 class TGMatchmakingRoleIDs:
     """Contains the Matchmaking Role IDs, ranked and unranked."""
 
     # Normal Matchmaking roles.
-    SINGLES_ROLE = 739299507799326842
-    DOUBLES_ROLE = 739299507799326841
-    FUNNIES_ROLE = 739299507795132495
-    RANKED_ROLE = 1017073005714743396
+    SINGLES_ROLE = 1237393435124695060
+    DOUBLES_ROLE = 1237393551671689227
+    FUNNIES_ROLE = 1237393624879337583
+    RANKED_ROLE = 1237393690495025263
     # Ranked matchmaking roles.
-    ONE_STAR = 835559992965988373
-    TWO_STAR = 835559996221554728
-    THREE_STAR = 835560000658341888
-    FOUR_STAR = 835560003556999199
-    FIVE_STAR = 835560006907985930
-    GROUNDS_MASTER = 835560009810444328
+    ONE_STAR = 1237393768567804005
+    TWO_STAR = 1237393920573575168
+    THREE_STAR = 1237394152992407553
+    FOUR_STAR = 1237394293589807155
+    FIVE_STAR = 1237394402746306560
+    GROUNDS_MASTER = 1237394496866615377
 
 
 class BGRoleIDs:
@@ -248,7 +248,7 @@ class BGRoleIDs:
     MOD_ROLE = 915402610926825553
     MUTED_ROLE = 928985750505140264
     # The default role you recieve when joining the server.
-    TRAVELLER_ROLE = 915403426811244585
+    TRAVELLER_ROLE = 1237393010841485393
 
 
 class Emojis:
@@ -267,8 +267,8 @@ class Emojis:
 
     # Win/lose emojis for rankstats.
     # If you dont want any, just use "W" & "L".
-    WIN_EMOJI = "<:rs_W:956192092454023198>"
-    LOSE_EMOJI = "<:rs_L:956193883098853507>"
+    WIN_EMOJI = "W"
+    LOSE_EMOJI = "L"
 
     # Emojis for the leaderboard ranks, make sure to have 8 with an empty one at the end.
     LEADERBOARD_EMOJIS = ["🥇", "🥈", "🥉", "💎", "💠", "🌸", "🏵️", "💮", ""]
